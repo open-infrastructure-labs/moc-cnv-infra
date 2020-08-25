@@ -3,4 +3,8 @@
 - hosts: nameservers
   become: true
   roles:
-    - dnsmasq
+    - role: networking
+      tags: [networking]
+
+    - role: dnsmasq
+      tags: [dnsmasq]

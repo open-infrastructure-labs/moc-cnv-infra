@@ -1,0 +1,7 @@
+---
+- name: reload networkmanager
+  shell: |
+    nmcli c reload
+    nmcli -g name c show --active | while read name; do
+      nmcli c down $name; nmcli c up $name
+    done
