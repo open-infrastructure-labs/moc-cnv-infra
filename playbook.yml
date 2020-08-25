@@ -1,0 +1,6 @@
+---
+# Configure nameservers with appropriate networking, dnsmasq, etc.
+- hosts: nameservers
+  become: true
+  roles:
+    - dnsmasq
