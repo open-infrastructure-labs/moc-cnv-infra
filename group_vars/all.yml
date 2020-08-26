@@ -4,3 +4,7 @@ os_public_cidr: 192.12.185.0/24
 ipmi_nic: ens9
 public_nic: ens10
 baremetal_nic: ens3
+
+authorized_keys:
+  - https://github.com/larsks.keys
+  - https://github.com/naved001.keys

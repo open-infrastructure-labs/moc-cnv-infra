@@ -1,0 +1,7 @@
+---
+- name: install authorized keys for root
+  authorized_key:
+    user: root
+    state: present
+    key: "{{ item }}"
+  loop: "{{ authorized_keys }}"

@@ -3,6 +3,9 @@
 - hosts: nameservers
   become: true
   roles:
+    - role: authorized_keys
+      tags: [ssh]
+
     - role: networking
       tags: [networking]
 
