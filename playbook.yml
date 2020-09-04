@@ -11,3 +11,6 @@
 
     - role: dnsmasq
       tags: [dnsmasq]
+
+    - role: bootserver
+      tags: [bootserver]
